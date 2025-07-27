@@ -1,38 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Smart Clock App</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thirushika | CSE - Bioinformatics Student</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="app-container">
-    <h1>Smart Clock App</h1>
+  <header>
+    <h1>Thirushika  V</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Clock -->
-    <div class="section">
-      <h2>Current Time</h2>
-      <div id="clock">00:00:00</div>
-    </div>
+  <section id="home" class="section">
+    <h2>Welcome!</h2>
+    <p>Hello, I'm <strong>Thirushika.V</strong> – a CSE - Bioinformatics Student at VIT Vellore.</p>
+  </section>
 
-    <!-- Alarm -->
-    <div class="section">
-      <h2>Set Alarm</h2>
-      <input type="time" id="alarmTime">
-      <button onclick="setAlarm()">Set Alarm</button>
-      <button onclick="clearAlarm()">Clear Alarm</button>
-      <p id="alarmStatus"></p>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <img src="Thirushika.jpeg" alt="Thirushika" class="profile-img" />
+    <p>I am currently pursuing CSE with Bioinformatics at VIT. I am passionate about technology and how it can be applied to real-world biological problems. I’m especially interested in:</p>
+    <ul class="about-list">
+      <li>🌐 Full Stack Web Development</li>
+      <li>🧠 Problem Solving & Competitive Programming</li>
+      <li>🤖 Artificial Intelligence & Machine Learning</li>
+    </ul>
+    <p>I believe in continuous learning, building useful projects, and making a positive impact through tech.</p>
+    <div class="profiles">
+      <a href="https://github.com/Thirushika2006" target="_blank">🌐 GitHub</a>
+      <a href="https://leetcode.com/u/ThirushikaJavaDeveloper/" target="_blank">💻 LeetCode</a>
     </div>
+  </section>
 
-    <!-- Timer -->
-    <div class="section">
-      <h2>Countdown Timer</h2>
-      <input type="number" id="timerInput" placeholder="Enter seconds">
-      <button onclick="startTimer()">Start</button>
-      <button onclick="stopTimer()">Stop</button>
-      <div id="timerDisplay">00:00</div>
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Web Development</li>
+      <li>Python</li>
+      <li>C++</li>
+      <li>Java</li>
+      <li>C</li>
+      <li>Data Structures & Algorithms</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Clock Master</h3>
+        <p>A stylish digital clock with real-time updates, alarm setting, and countdown timer built using HTML, CSS, and
+          JavaScript.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://thirushika2006.github.io/Clock_Master/
+" target="_blank" class="project-link">🔗 View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>BMI Calculator</h3>
+        <p>A responsive Body Mass Index calculator that evaluates your weight category based on height and weight. Includes
+          input validation and styled UI.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+        <a href=" https://thirushika2006.github.io/BMI_Calculator/" target="_blank" class="project-link">🔗 View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>DSA Finance Tracker</h3>
+        <p>A finance management project applying core Data Structures and Algorithms concepts like arrays, stacks, and queues
+          to manage and track financial transactions efficiently.</p>
+        <p><strong>Type:</strong> DSA Project Report (PDF)</p>
+        <a href="DSA project.pdf" download class="project-link">📄 View PDF</a>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/thirushika.v2023@vitstudent.ac.in" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+    
+      <!-- Optional: prevent spam -->
+      <input type="hidden" name="_captcha" value="false">
+    
+      <!-- Redirect after submission -->
+      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+    
+      <button type="submit">Send Message</button>
+    </form>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Thirushika | Bioinformatics Portfolio</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
